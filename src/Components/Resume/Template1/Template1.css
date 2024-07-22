@@ -377,7 +377,8 @@
 }
 
 .download {
-    width: 130px;
+    min-width: 130px;
+    max-width: auto;
     padding: 5px;
     display: flex;
     justify-content: center;

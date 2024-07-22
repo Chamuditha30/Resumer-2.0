@@ -83,7 +83,7 @@ function Template1({ loader, formData }) {
 
         <div className='btnContainer'>
           <button className='back' onClick={handleBackForm}>Back</button>
-          <button className='download' onClick={downloadPDF} disabled={!(downloader === false)} type="submit">{loader ? (
+          <button className='download' onClick={downloadPDF} disabled={!(downloader === false)} type="submit">{downloader ? (
             <span>Downloading...</span>
           ) : (
             <span>Download</span>
