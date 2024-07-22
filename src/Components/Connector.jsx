@@ -81,7 +81,7 @@ function Connector() {
     setLoader(true);
     setTimeout(() => {
       setLoader(false);
-    }, 10000)
+    }, 20000)
   }
 
   return (
