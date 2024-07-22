@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.experienceMainContainer{
+    margin: 20px;
+    padding: 0 50px;
+    border-left: 1px solid #ffc815;
+    border-right: 1px solid #ffc815;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experiences{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.experiences h2{
+    color: #585858;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.experiences p{
+    font-size: large;
+    color: #585858;
+}
+
+.experiences input{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid #ffc815;
+    color: #292929;
+    width: 200px;
+    height: 35px;
+}
+
+.experiences textarea{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid #ffc815;
+    color: #292929;
+    height: 100px;
+}
+
+.experiences input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    outline: none;
+}
+
+.ExpDateContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* For desktop screens (1024x768 to 1920x1080) */
+@media screen and (min-width: 1024px) and (max-width: 1920px) {}
+
+/* For mobile devices (360x640 to 414x896) */
+@media screen and (min-width: 360px) and (max-width: 430px) {
+
+    .experienceMainContainer{
+        margin: 20px;
+        padding: 0 10px;
+    }
+
+    .experiences{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    .experiences input{
+        font-size: normal;
+        width: 250px;
+    }
+    
+    .ExpDateContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experiences h2{
+        font-size: larger;
+    }
+}

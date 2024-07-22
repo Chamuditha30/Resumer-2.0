@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #292929;
+    width: 100%;
+    position: fixed;
+    z-index: 9000;
+}
+
+.logo {
+    width: 500px;
+    margin: 10px 0;
+}
+
+.formContainer {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    position: relative;
+    margin: 0 30px;
+    margin-top: 145px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+.progressBar {
+    width: 100%;
+    height: 7px;
+    background-color: white;
+}
+
+.progressBar div {
+    width: 20%;
+    height: 100%;
+    background-color: #ffc815;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 99%;
+}
+
+.formHeader {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: #585858;
+    border-bottom: 2px solid #ffc815;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+}
+
+.formHeader h1{
+    text-align: center;
+}
+
+.formFooter {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.naviBtn{
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: large;
+    color: #292929;
+    background-color: #ffc815;
+    border: 2px solid #292929;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    opacity: 1;
+}
+
+.naviBtn i{
+    font-size: x-large;
+}
+
+.naviBtn:active{
+    transform: translateY(5px);
+}
+
+.naviBtnNo{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: large;
+    color: #292929;
+    background-color: #ffc815;
+    border: 2px solid #292929;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    opacity: 1;
+}
+
+.naviBtnNo:active{
+    transform: translateY(5px);
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* For desktop screens (1024x768 to 1920x1080) */
+@media screen and (min-width: 1024px) and (max-width: 1920px) {}
+
+/* For mobile devices (360x640 to 414x896) */
+@media screen and (min-width: 360px) and (max-width: 430px) {
+    .logo {
+        width: 300px;
+    }
+
+    .formHeader {
+        font-size: small;
+    }
+
+    .formContainer {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .formFooter {
+        gap: 5px;
+    }
+
+    .naviBtn{
+        width: 70px;
+        font-size: medium;
+    }
+
+    .naviBtnNo{
+        font-size: medium;
+    }
+}

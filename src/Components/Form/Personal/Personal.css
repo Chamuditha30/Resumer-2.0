@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.personalMainContainer{
+    margin: 20px;
+    padding: 0 20px;
+    border-left: 1px solid #ffc815;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.proPicUpContainer label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 208px;
+    gap: 10px;
+    text-transform: uppercase;
+    color: #292929;
+    background-color: #ffc815;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: large;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease-out;
+    z-index: 9998;
+}
+
+.proPicUpContainer label:active{
+    transform: translateY(5px);
+}
+
+.personalInfoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personalInfo{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ffc815;
+    padding-right: 20px;
+}
+
+.personalInfo input[type="text"], input[type="email"]{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid #ffc815;
+    color: #292929;
+    width: 300px;
+    height: 35px;
+}
+
+.personalInfo textarea{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid #ffc815;
+    color: #292929;
+    height: 100px;
+}
+
+.personalInfo input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    outline: none;
+}
+
+.bdayContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.bdayContainer label{
+    color: #292929;
+    font-size: large;
+    opacity: 0.75;
+}
+
+.personalInfo input[type="date"]{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    color: #292929;
+    background-color: #ffc815;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: normal;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.skillContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 20px;
+    border-right: 1px solid #ffc815;
+}
+
+.skillContainer input{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid #ffc815;
+    color: #292929;
+    width: 300px;
+    height: 35px;
+}
+
+.skillContainer input:focus{
+    outline: none;
+}
+
+.catHead{
+    color: #585858;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* For desktop screens (1024x768 to 1920x1080) */
+@media screen and (min-width: 1024px) and (max-width: 1920px) {}
+
+/* For mobile devices (360x640 to 414x896) */
+@media screen and (min-width: 360px) and (max-width: 430px) {
+    .proPicUpContainer label{
+        font-size: small;
+    }
+
+    .personalInfoContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+
+    .personalInfo input[type="text"], input[type="email"]{
+        font-size: normal;
+        width: 250px;
+    }
+    
+    .personalInfo textarea{
+        font-size: normal;
+        width: 250px;
+    }
+
+    .skillContainer input{
+        width: 250px;
+        margin-right: 20px;
+    }
+
+    .skillContainer{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        padding: 0px;
+        border-right: 1px solid #ffc815;
+    }
+    
+    .catHead{
+        margin-top: 30px;
+        font-size: larger;
+    }
+    
+}

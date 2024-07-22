@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainTemplateContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px 30px;
+    padding: 0 50px;
+    border-left: 1px solid #ffc815;
+    border-right: 1px solid #ffc815;
+}
+
+.radioContainer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.radioContainer div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radioContainer p{
+    color: rgb(255, 80, 80);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cstmRadio{
+    border: 1px solid #ffc815;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    cursor: pointer;
+}
+
+.cstmRadio input{
+    position: absolute;
+    opacity: 0;
+}
+
+.cstmRadio img{
+    width: 100px;
+    height: 100%;
+}
+
+.cstmRadio input:checked + img{
+    border: 5px solid #ffc815;
+}
+
+.createBtn button{
+    margin-top: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: large;
+    color: #292929;
+    background-color: #ffc815;
+    border: 2px solid #292929;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    opacity: 1;
+}
+
+.createBtn i{
+    font-size: x-large;
+}
+
+.createBtn button:active{
+    transform: translateY(5px);
+}
+
+.template2, .template3{
+    opacity: 0.5;
+}

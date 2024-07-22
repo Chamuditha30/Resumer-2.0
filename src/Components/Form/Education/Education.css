@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.educationMainContainer{
+    margin: 20px;
+    padding: 0 50px;
+    border-left: 1px solid #ffc815;
+    border-right: 1px solid #ffc815;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.educations{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.educations h2{
+    color: #585858;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.educations p{
+    font-size: large;
+    color: #585858;
+}
+
+.educations input{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid #ffc815;
+    color: #292929;
+    width: 350px;
+    height: 35px;
+}
+
+.educations textarea{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid #ffc815;
+    color: #292929;
+    height: 100px;
+}
+
+.educations input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    outline: none;
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* For desktop screens (1024x768 to 1920x1080) */
+@media screen and (min-width: 1024px) and (max-width: 1920px) {}
+
+/* For mobile devices (360x640 to 414x896) */
+@media screen and (min-width: 360px) and (max-width: 430px) {
+
+    .educationMainContainer{
+        margin: 20px;
+        padding: 0 10px;
+    }
+
+    .educations{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    .educations input{
+        font-size: normal;
+        width: 250px;
+    }
+
+    .educations h2{
+        font-size: larger;
+    }
+}
