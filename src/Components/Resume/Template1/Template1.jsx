@@ -12,7 +12,7 @@ function Template1({ loader, formData }) {
   const navigate = useNavigate()
 
   const handleBackForm = () => {
-    navigate('/');
+    navigate('/Form');
   };
 
   const [downloader, setDownloader] = useState(false);

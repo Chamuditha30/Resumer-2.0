@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import Form from './Form/Form'
 import proPicSmple from '/src/assets/proPic.jpg'
+import WelcomePage from './WelcomePage/WelcomePage'
 import Template1 from './Resume/Template1/Template1'
 import Template2 from './Resume/Template2/Template2'
 import Template3 from './Resume/Template3/Template3'
@@ -86,7 +87,8 @@ function Connector() {
 
   return (
     <Routes>
-      <Route path="/" element={<Form formData={formData} onFormDataChange={handleFormDataChange} handleLoader={handleLoader} />} />
+      <Route path="/" element={<WelcomePage />} />
+      <Route path="/Form" element={<Form formData={formData} onFormDataChange={handleFormDataChange} handleLoader={handleLoader} />} />
       <Route path="/Template1" element={<Template1 loader={loader} formData={formData} />} />
       <Route path="/Template2" element={<Template2 loader={loader} formData={formData} />} />
       <Route path="/Template3" element={<Template3 loader={loader} formData={formData} />} />

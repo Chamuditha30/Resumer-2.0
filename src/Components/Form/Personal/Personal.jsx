@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Personal.css'
 
 function Personal({ formData, onFormDataChange }) {
 
+  const [fileUploaded, setFileUploaded] = useState(false)
+
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.type === 'file' ? URL.createObjectURL(event.target.files[0]) : event.target.value;
+
+    if (event.target.type === 'file') {
+      setFileUploaded(true)
+    }
+
     onFormDataChange((prev) => {
       return { ...prev, [name]: value };
     });
@@ -17,7 +24,10 @@ function Personal({ formData, onFormDataChange }) {
 
       <div className='proPicUpContainer'>
         <input type="file" id='proPicUp' name='proPic' onChange={handleChange} />
-        <label For="proPicUp"><i class="fa fa-upload" aria-hidden="true"></i>Upload Picture</label>
+        <label For="proPicUp">
+          {fileUploaded ? <i class="fa fa-check-square" aria-hidden="true"></i> : <i class="fa fa-upload" aria-hidden="true"></i>}
+          {fileUploaded ? 'Picture Uploaded' : 'Upload Picture'}
+        </label>
       </div>
 
       <div className='personalInfoContainer'>
