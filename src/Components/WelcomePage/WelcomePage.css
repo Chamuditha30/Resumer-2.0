@@ -115,3 +115,11 @@
     }
     
 }
+
+@media screen and (max-height: 740px){
+    .welcomePageMobile{
+        display: flex;
+        width: 400px;
+        margin-top: 200px;
+    }
+}
