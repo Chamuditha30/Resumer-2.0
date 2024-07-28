@@ -6,7 +6,7 @@ import Connector from './Components/Connector'
 function App() {
   return (
     <>
-      <Router basename='/Resumer-2.0'>
+      <Router basename='/'>
         <Connector />
       </Router>
     </>
