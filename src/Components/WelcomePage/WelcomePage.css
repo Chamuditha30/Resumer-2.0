@@ -92,13 +92,13 @@
     .welcomePageMobile{
         display: flex;
         width: 400px;
-        margin-top: 60px;
+        margin-top: 80px;
     }
     
     .strtBtnWelcomePage{
         position: relative;
         left: 5px;
-        bottom: 625px;
+        bottom: 640px;
         width: 50px;
         padding: 5px;
         display: flex;
@@ -119,7 +119,53 @@
 @media screen and (max-height: 740px){
     .welcomePageMobile{
         display: flex;
-        width: 400px;
+        width: 350px;
         margin-top: 200px;
+    }
+
+    .strtBtnWelcomePage{
+        position: relative;
+        left: 5px;
+        bottom: 560px;
+        width: 50px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+        color: #292929;
+        background-color: #ffc815;
+        border: 2px solid #292929;
+        box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        transition: all 0.25s ease-out;
+        animation: pop 2s ease-in-out infinite;
+    }
+}
+
+@media screen and (max-height: 844px){
+    .welcomePageMobile{
+        display: flex;
+        width: 350px;
+        margin-top: 150px;
+    }
+
+    .strtBtnWelcomePage{
+        position: relative;
+        left: 5px;
+        bottom: 560px;
+        width: 50px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+        color: #292929;
+        background-color: #ffc815;
+        border: 2px solid #292929;
+        box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        transition: all 0.25s ease-out;
+        animation: pop 2s ease-in-out infinite;
     }
 }
